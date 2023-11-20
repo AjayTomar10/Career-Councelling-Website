@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="radio"]{
+            padding-right: 1rem;
+            cursor: pointer;
+        }
+        .step-col{
+            width:120px;
+            text-align: center;
+            color:#333;
+            position:relative;
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        #progress{
+            position: absolute;
+            height: 100%;
+            width: 57%;
+            border-bottom-left-radius: 10%;
+            border-top-left-radius: 10%;
+            background: linear-gradient(to right,#1a6035,#036c2b);
+        }
+    </style>
+    <title>Test</title>
+</head>
+<body>
+    <!-- progress bar start -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center rounded ">
+        <div class="pro h-auto w-full md:max-w-[50%] text-end rounded-lg border-black pb-4 mb-2 bg-blue-600">
+            <div class="step-row w-auto h-8 flex justify-between text-center  box-shadow-[0 -1px 5px -1px #000] relative">
+                <div id="progress" class="p-6"></div>
+                <div class="step-col col-1"><small class="text-white">Step1</small></div>
+                <div class="step-col col-2"><small class="text-white">Step2</small></div>
+                <div class="step-col col-3"><small class="text-white">Step3</small></div>
+                <div class="step-col col-4"><small class="text-white">Step4</small></div>
+                <div class="step-col col-5"><small class="text-white">Step5</small></div>
+                <div class="step-col col-6"><small class="text-white">Step6</small></div>
+                <div class="step-col col-6"><small class="text-white">Step7</small></div>
+            </div>
+        </div>
+    </div>
+    <!-- progress bar end -->
+   <!-- Main Part-->
+   <div class="maincontainer">
+    <div class="">
+       <h2 class="text-4xl text-center mt-4">STEM Test</h2>
+       <!-- -----------------MATHEMATICS part start------------ -->
+       <div id="#maths">
+            <!-- question1 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <img src="/images/mathQ1.png" alt="">
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q1" value="a"><label class="text-xl font-medium" for="optionA">a</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q1" value="b"><label class="text-xl font-medium" for="optionB">b</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q1" value="c"><label class="text-xl font-medium" for="optionC">c</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q1" value="d"><label class="text-xl font-medium" for="optionD">d</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question2 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>About the number of pairs which have 16 as their HCF and 136 as their LCM,we can defiantly say that.</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q2" value="No such pair exits"><label class="text-xl font-medium" for="optionA">No such pair exits</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q2" value="Only one pair exists"><label class="text-xl font-medium" for="optionB">Only one pair exists</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q2" value="Only two such pair exists"><label class="text-xl font-medium" for="optionC">Only two such pair exists</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q2" value="Many such pair exists"><label class="text-xl font-medium" for="optionD">Many such pair exists</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question3 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>Find the least number which when divided by 16,18,20,25 leaves 4 as reminder in each case,but when divided by 7 leaves no reminder.</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q3" value="17004"><label class="text-xl font-medium" for="optionA">17004</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q3" value="18000"><label class="text-xl font-medium" for="optionB">18000</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q3" value="18002"><label class="text-xl font-medium" for="optionC">18002</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q3" value="18004"><label class="text-xl font-medium" for="optionD">18004</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question4 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>The HCF and LCM of two numbers are 84 and 21 respectively.If the ratio of the two number is 1:4,then the larger of two number is</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q4" value="12"><label class="text-xl font-medium" for="optionA">12</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q4" value="48"><label class="text-xl font-medium" for="optionB">48</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q4" value="84"><label class="text-xl font-medium" for="optionC">84</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q4" value="108"><label class="text-xl font-medium" for="optionD">108</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question5 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>If the unit digit is the the product(459 x 46 x 28* x 484) is 2, the digit in place of * is</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q5" value="3"><label class="text-xl font-medium" for="optionA">3</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q5" value="5"><label class="text-xl font-medium" for="optionB">5</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q5" value="7"><label class="text-xl font-medium" for="optionC">7</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q5" value="none of these"><label class="text-xl font-medium" for="optionD">none of these</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question6 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>The least number which is perfect square and divisible by each of the number 16,20 and 24 is</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q6" value="1600"><label class="text-xl font-medium" for="optionA">1600</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q6" value="3600"><label class="text-xl font-medium" for="optionB">3600</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q6" value="6400"><label class="text-xl font-medium" for="optionC">6400</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q6" value="14400"><label class="text-xl font-medium" for="optionD">14400</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question7 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <img src="/images/mathQ7.png" alt="">
+                        <img src="/images/mathA7.png" alt="">
+                        <!-- <p><math xmlns="http://www.w3.org/1998/MathML"><mrow><mfrac>
+                            <msqrt>
+                                <mn>7</mn>
+                            </msqrt>
+                            <mo>+</mo>
+                            <msqrt>
+                                <mn>2</mn>
+                            </msqrt>
+                            <mo>/</mo>
+                            
+                            <msqrt>
+                                <mn>7</mn>
+                            </msqrt>
+                            <mo>+</mo>
+                            <msqrt>
+                                <mn>2</mn>
+                            </msqrt>
+                        </mfrac></mrow></math></p> -->
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q7" value="a"><label class="text-xl font-medium" for="optionA">a</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q7" value="b"><label class="text-xl font-medium" for="optionB">b</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q7" value="c"><label class="text-xl font-medium" for="optionC">c</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q7" value="d"><label class="text-xl font-medium" for="optionD">d</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question8 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>How many two-digit number satisfy this property.The last units digit or units digit of the square of the two-digit number is 8?</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q8" value="1"><label class="text-xl font-medium" for="optionA">1</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q8" value="3"><label class="text-xl font-medium" for="optionB">3</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q8" value="4"><label class="text-xl font-medium" for="optionC">4</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q8" value="none of these"><label class="text-xl font-medium" for="optionD">none of these</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question9 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>What is the HCF of ant two prime numbers?</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q9" value="1"><label class="text-xl font-medium" for="optionA">1</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q9" value="2"><label class="text-xl font-medium" for="optionB">2</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q9" value="3"><label class="text-xl font-medium" for="optionC">3</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q9" value="4"><label class="text-xl font-medium" for="optionD">4</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question10 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>20^17 + 30^17 is divisible by</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q10" value="30"><label class="text-xl font-medium" for="optionA">30</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q10" value="20"><label class="text-xl font-medium" for="optionB">20</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q10" value="50"><label class="text-xl font-medium" for="optionC">50</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q10" value="none of these"><label class="text-xl font-medium" for="optionD">none of these</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question11 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>a^n - b^n is always divisible by (a-b),if a.b and n are natural numbers and divisible by (a+b) if n is</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q11" value="odd"><label class="text-xl font-medium" for="optionA">odd</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q11" value="even"><label class="text-xl font-medium" for="optionB">even</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q11" value="both odd or even"><label class="text-xl font-medium" for="optionC">both odd or even</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q11" value="none of these"><label class="text-xl font-medium" for="optionD">none of these</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question12 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <img src="/images/mathQ12.png" alt="">
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q12" value="30"><label class="text-xl font-medium" for="optionA">30</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q12" value="20"><label class="text-xl font-medium" for="optionB">20</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q12" value="50"><label class="text-xl font-medium" for="optionC">50</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q12" value="none of these"><label class="text-xl font-medium" for="optionD">none of these</label>
+                    </div> 
+                </div>
+            </div>
+       
+    </div>
+    <!-- -----------------MATHEMATICS part end------------ -->
+        <!-- -----------------BIOLOGY part start------------ -->
+        <div id="#biology">
+            <!-- question1 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>F1 particle or oxysome is present in:</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q1" value="Endoplasmic reticulum "><label class="text-xl font-medium" for="optionA">Endoplasmic reticulum </label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q1" value="Chloroplast"><label class="text-xl font-medium" for="optionB">Chloroplast</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q1" value="Mitochondria"><label class="text-xl font-medium" for="optionC">Mitochondria</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q1" value="Golgi complex"><label class="text-xl font-medium" for="optionD">Golgi complex</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question2 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>If the ribosomes of a cell are destroyed then:</p>
+                           <p> (a) Respiration will not take place. </p>
+                            <p>(b) Fats will not be formed. </p>
+                            <p>(c) Proteins will not be formed. </p>
+                            <p>(d) Carbon assimilation will not occur. </p>
+                        
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q2" value="a"><label class="text-xl font-medium" for="optionA">a</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q2" value="b"><label class="text-xl font-medium" for="optionB">b</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q2" value="c"><label class="text-xl font-medium" for="optionC">c</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q2" value="d"><label class="text-xl font-medium" for="optionD">d</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question3 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>The muscle which work throughout life without undergoing fatigue is:</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q3" value="straight muscle"><label class="text-xl font-medium" for="optionA">straight muscle </label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q3" value="non-striated muscle "><label class="text-xl font-medium" for="optionB">non-striated muscle </label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q3" value="cardiac muscle "><label class="text-xl font-medium" for="optionC">cardiac muscle </label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q3" value="all of the above "><label class="text-xl font-medium" for="optionD">all of the above </label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question4 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>Rotation of crops is essential for:</p>
+                            <p>(a) getting different kinds of crops</p>
+                            <p>(b) increasing quality of mineral</p>
+                            <p>(c) increasing fertility of soil</p>
+                            <p>(d) increasing quality of proteins</p>
+                           
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q4" value="a"><label class="text-xl font-medium" for="optionA">a</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q4" value="b"><label class="text-xl font-medium" for="optionB">b</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q4" value="c"><label class="text-xl font-medium" for="optionC">c</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q4" value="d"><label class="text-xl font-medium" for="optionD">d</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question5 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>At high altitude, RBCs of human blood will </p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q5" value="getting different kinds of crops "><label class="text-xl font-medium" for="optionA">getting different kinds of crops </label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q5" value="increasing quality of mineral"><label class="text-xl font-medium" for="optionB">increasing quality of mineral</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q5" value="increasing fertility of soil "><label class="text-xl font-medium" for="optionC">increasing fertility of soil </label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q5" value="increasing quality of proteins "><label class="text-xl font-medium" for="optionD">increasing quality of proteins </label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question6 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>At high altitude, RBCs of human blood  
+                           </p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q6" value="Increase in number "><label class="text-xl font-medium" for="optionA">Increase in number </label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q6" value="Decrease in number"><label class="text-xl font-medium" for="optionB">Decrease in number</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q6" value="Increase in size "><label class="text-xl font-medium" for="optionC">Increase in size </label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q6" value="Decrease in size"><label class="text-xl font-medium" for="optionD">Decrease in size</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question7 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>Wildlife is :  </p> 
+                           <p>(a) All biota excluding man, domestic animals and cultivated crops </p> 
+                            <p>(b) All vertebrates of reserve forests</p>
+                            <p>(c) All animals of reserve forests </p>
+                            <p>(d) All animals and plant of reserve forest </p>
+                             
+                         
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q7" value="a"><label class="text-xl font-medium" for="optionA">a</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q7" value="b"><label class="text-xl font-medium" for="optionB">b</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q7" value="c"><label class="text-xl font-medium" for="optionC">c</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q7" value="d"><label class="text-xl font-medium" for="optionD">d</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question8 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>Genes are not found in pairs in: 
+                           </p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q8" value="Sperm cell"><label class="text-xl font-medium" for="optionA">Sperm cell</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q8" value="Fertilized egg"><label class="text-xl font-medium" for="optionB">Fertilized egg</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q8" value="Muscles"><label class="text-xl font-medium" for="optionC">Muscles</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q8" value="Epithelial cell"><label class="text-xl font-medium" for="optionD">Epithelial cell</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question9 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p> Which of the following constitute a pistil?</p>
+                            <p>(a) Stigma, anther and ovary </p>
+                            <p>(b) Stigma, stamen and ovary</p>
+                            <p>(c) Pollen sac, style and ovule </p>
+                            <p>(d) Stigma, style and ovary</p>
+        
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q9" value="a"><label class="text-xl font-medium" for="optionA">a</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q9" value="b"><label class="text-xl font-medium" for="optionB">b</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q9" value="c"><label class="text-xl font-medium" for="optionC">c</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q9" value="d"><label class="text-xl font-medium" for="optionD">d</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question10 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>BOD is connected with:
+                           </p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q10" value="Organic matter"><label class="text-xl font-medium" for="optionA">Organic matter</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q10" value="Microbes"><label class="text-xl font-medium" for="optionB">Microbes</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q10" value="Microbes and organic matter"><label class="text-xl font-medium" for="optionC">Microbes and organic matter</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q10" value="None of the above"><label class="text-xl font-medium" for="optionD">None of the above</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question11 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>BOD is connected with:
+                           </p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q11" value="Prolactin"><label class="text-xl font-medium" for="optionA">Prolactin</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q11" value="Vasopressin"><label class="text-xl font-medium" for="optionB">Vasopressin</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q11" value="Oxytocin"><label class="text-xl font-medium" for="optionC">Oxytocin</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q11" value="Luteinizing hormone"><label class="text-xl font-medium" for="optionD">Luteinizing hormone</label>
+                    </div> 
+                </div>
+            </div>
+    
+    </div>
+    <!-- -----------------BIOLOGY part end------------ -->
+       
+       <!-- Next button -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] text-end rounded-lg border-black p-3  md:p-5 mb-2">
+                 <button class="bg-blue-900 w-auto h-10 rounded hover:bg-green-500"><a class="text-xl text-white p-8 py-10 font-medium text-center" href="Analytictest.html">Next</a></button>
+            </div>
+        </div> 
+    
+ </div>
+</div>
+</body>
+</html>

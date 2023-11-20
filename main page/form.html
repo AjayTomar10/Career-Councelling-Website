@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Signup Page</title>
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="email"],
+        input[type="text"]{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            margin-bottom: 4px;
+            width: 300px;
+        }
+        select{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            margin-bottom: 4px;
+            width: 323px;
+        }
+
+        button[type="submit"] {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            margin-bottom: 2px;
+            width: 100px;
+            border-radius: 10px;
+        }
+        .container{
+            position:absolute;
+            background-color: white;
+            margin-left: 35%;
+            margin-top: 8%;
+            width: 300px;
+            padding: 50px;
+            
+        }
+
+    
+    </style>
+
+</head>
+
+<body>
+   
+    <div class="container">
+        <h1>Register</h1>
+        <form action="7th.php" method="post" onsubmit="return submitForm();">
+            <input type="text" placeholder="Name" name="name" required/>
+            <input type="email" placeholder="Email" name="email" required/>
+            <select id="class" name="class">
+                <option value="11-12">Class(11-12)</option>
+                <option value="9-10">9-10</option>
+                <option value="class(<=8)"><=8</option>
+            </select>
+            <input type="text" placeholder="School/Institution" name="school" required/>
+            <button type="submit">Submit</button>
+     <div>       
+            <script>
+            function submitForm() {
+                // Get the email input field
+                var emailInput = document.getElementsByName('email')[0];
+                var email = emailInput.value;
+        
+                // Regular expression to validate email format
+                var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        
+                // Check if the email is in a valid format
+                if (!emailPattern.test(email)) {
+                    // Display an error message
+                    alert('Please enter a valid email address.');
+                    // Prevent the form from submitting
+                    return false;
+                }
+        
+                // You can add more validation or processing here if needed
+        
+                // If all validation passes, allow the form to submit
+                // Redirect to index.html after submission
+                window.location.href = 'main/index.html';
+                return false; // Prevent the form from submitting via default behavior
+            }
+            </script>
+        </form>
+        
+    
+</body>
+
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <!-- linking css file -->
+    <link rel="stylesheet" href="index_style.css">
+
+    <title>NXT STEP</title>
+    <style>
+        body {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/004/497/201/original/white-grey-low-poly-crystal-background-polygon-design-pattern-environment-green-low-poly-illustration-low-polygon-background-free-vector.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="bg-white bg-gray-900 dark:bg-gray-900 dark:border-gray-700">
+        <div class="lg\:max-w-screen-xl lg\:max-h-\[48px\] flex flex-wrap items-center justify-between mx-auto p-2">
+            <a href="#" class="flex items-center">
+
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-900 dark:text-white p-2">NXT
+                    STEP</span>
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-dropdown" aria-expanded="false">
+
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col font-medium p-3 md:p-0 mt-2 rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-gray-900 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-xl bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Profile
+                            <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                </li>
+
+                            </ul>
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="carrers.html"
+                            class="block py-2 pl-3 pr-4 bg-gra text-xl text-gray-50 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Career</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-xl text-gray-50 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wel">
+        <h3 style="font-size: 50px; color:black;">Welcome to NXT STEP!</h3><br />
+
+        <p>We're here to help you find your path to success.</p>
+    </div>
+
+    <section
+        class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+                Discover Your Path</h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Your career is more than just
+                a job; it's a path to personal growth and fulfillment. Every day presents an opportunity to learn, to
+                challenge yourself, and to reach new heights. Embrace each twist and turn, for they are the stepping
+                stones to success. Believe in your abilities, stay resilient in the face of setbacks, and never stop
+                pursuing your dreams. Your career is a journey uniquely yours, and its destination is determined by your
+                dedication and determination.
+            </p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                <a href="form.html"
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Get started
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+                <a href="/survey form/index.html"
+                    class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-blue-700 focus:ring-4 focus:ring-gray-400">
+                    Give Survey
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="explore">
+        <a href="explore.html"><button type="button"
+                class="px-6 py-3.5 text-base font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Explore</button>
+        </a>
+    </div>
+
+    <!----        <div class="content">
+            
+            <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">NXT STEP</span>Career Guide</h1>
+                <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets 
+                where technology, <br>innovation, and capital can unlock long-term value and drive economic growth.</p>
+
+            <div class="button">
+                <a href="form.html"><button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Get Started</button></a>
+                <a href="survey form/index.html"><button type="button" class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">Give a Survey</button></a>  
+            </div>
+            <div class="explore">
+                <button type="button" class="btn btn-primary btn-lg" style="margin-top: 80px; margin-bottom: 20px;">Large button</button>
+            </div> 
+            </div>--->
+
+    <!--<div class="header">
+            <h3>Welcome to Career Counseling</h3>
+            <p>We're here to help you find your path to success.</p>
+            <a href="form.html" class="get-started-button">Get Started</a>
+        </div>-->
+    <!--Sayings Cards-->
+    <!---- <section id="sayings">
+        <div class="container">
+            <h1 class="text-center heading2">Great people about Great India</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card sayingsText">
+                        <div class="card-body">
+                            <p class="card-text mt-3">“Travel is the Language of Peace.”</p>
+                            <p>~ Mahathma Gandhi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card sayingsText">
+                        <div class="card-body">
+                            <p class="card-text mt-3">“We owe a lot to the Indians, who taught us how to count, without
+                                which no worthwhile scientific discovery could have been made.”</p>
+                            <p> ~ Albert Einstein </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card sayingsText">
+                        <div class="card-body">
+                            <p class="card-text mt-3">“India shaped my mind, anchored my identity, influenced my
+                                beliefs, and made me who I am. … India matters to me and I would like to matter to
+                                India.”</p>
+                            <p>~ Shashi Tharoor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card sayingsText">
+                        <div class="card-body">
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card sayingsText">
+                        <div class="card-body">
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card sayingsText">
+                        <div class="card-body">
+                            <p class="card-text mt-3">“To other countries, I may go as a tourist, but to India, I come
+                                as a pilgrim.”</p>
+                            <p>~ Martin Luther King Jr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+            <div
+                class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+
+                <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Success is the sum of
+                    small efforts, repeated</h1>
+                <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+                    Career counseling is a vital resource for individuals seeking guidance in their professional lives.
+                    It offers insights into personal strengths, interests, and values, helping people make informed
+                    career choices. By providing direction, support, and access to market information, career counseling
+                    not only enhances job satisfaction but also contributes to long-term success and personal growth. It
+                    is a valuable tool for those navigating the ever-changing.</p>
+                <a href="#"
+                    class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Read more
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+
+                    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Discover Your Path</h2>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Career counseling plays a
+                        pivotal role in guiding individuals towards making well-informed and strategic decisions about
+                        their career paths. One of its key benefits is helping individuals identify their unique
+                        strengths and talents, which can often be overlooked. By understanding their core competencies,
+                        individuals can explore career options that align with their abilities, increasing the
+                        likelihood of success and job satisfaction.</p>
+                    <a href="#"
+                        class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read
+                        more
+                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+                <div
+                    class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+
+
+                    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Career Assessment Tools</h2>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">career counseling can be
+                        particularly beneficial during times of transition, such as career changes or reentering the
+                        workforce. It offers a supportive environment for exploring different career options and
+                        provides guidance on acquiring the necessary skills and qualifications. This support can
+                        significantly reduce the stress and uncertainty often associated with major career shifts.</p>
+                    <a href="#"
+                        class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read
+                        more
+                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Great People about Great India</h1>
+        <ul class="cards">
+            <li class="card">
+                <div>
+
+                    <div class="card-content">
+
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>“The Future depends on what you do Today”</p>
+                            <p>~ Mahathma Gandhi</p>
+
+                        </blockquote>
+
+                    </div>
+                </div>
+
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title"></h3>
+                    <div class="card-content">
+
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>“There is no passion to be found playing small—in settling for a life that is less than
+                                the one you are capable of living.”</p>
+                            <p> ~ Nelson Mandela </p>
+                        </blockquote>
+
+                    </div>
+                </div>
+
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title"></h3>
+                    <div class="card-content">
+
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>“India shaped my mind, anchored my identity, influenced my
+                                beliefs, and made me who I am. … India matters to me and I would like to matter to
+                                India.”</p>
+                            <p>~ Shashi Tharoor</p>
+                        </blockquote>
+
+                    </div>
+                </div>
+
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title"></h3>
+                    <div class="card-content">
+
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>“Whatever your life’s work is, do it well. A man should do his job so well that the
+                                living, the dead, and the unborn could do it no better.”</p>
+                            <p>~ Martin Luther King Jr.</p>
+                        </blockquote>
+
+                    </div>
+                </div>
+
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title"></h3>
+                    <div class="card-content">
+
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>"Life should be great rather than long."
+                            </p>
+                            <p>~ B.R. Ambedkar</p>
+                        </blockquote>
+
+                    </div>
+
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title"></h3>
+                    <div class="card-content">
+
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>"Flowbite is just awesome. It contains tons of predesigned components and pages starting
+                                from login screen to complex dashboard. Perfect choice for your next SaaS application."
+                            </p>
+                        </blockquote>
+
+                    </div>
+                </div>
+
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title"></h3>
+                    <div class="card-content">
+
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>"Flowbite is just awesome. It contains tons of predesigned components and pages starting
+                                from login screen to complex dashboard. Perfect choice for your next SaaS application."
+                            </p>
+                        </blockquote>
+
+                    </div>
+                </div>
+
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title"></h3>
+                    <div class="card-content">
+
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>"Flowbite is just awesome. It contains tons of predesigned components and pages starting
+                                from login screen to complex dashboard. Perfect choice for your next SaaS application."
+                            </p>
+                        </blockquote>
+
+                    </div>
+                </div>
+
+            </li>
+            <li class="card">
+                <div>
+                    <h3 class="card-title"></h3>
+                    <div class="card-content">
+
+                        <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                            <p>"Flowbite is just awesome. It contains tons of predesigned components and pages starting
+                                from login screen to complex dashboard. Perfect choice for your next SaaS application."
+                            </p>
+                        </blockquote>
+
+                    </div>
+                </div>
+
+            </li>
+
+        </ul>
+    </section>
+
+
+
+
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid userInfo">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="" class="btn btn-success mt-3">Contact Us</a><br><br>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
+</html>

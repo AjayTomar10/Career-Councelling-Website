@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="radio"]{
+            padding-right: 1rem;
+            cursor: pointer;
+        }
+        .step-col{
+            width:120px;
+            text-align: center;
+            color:#333;
+            position:relative;
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        #progress{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 10%;
+            background: linear-gradient(to right,#1a6035,#036c2b);
+        }
+    </style>
+    <title>Personality</title>
+</head>
+<body>
+    <!-- progress bar start -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center rounded">
+        <div class="pro h-auto w-full md:max-w-[50%] text-end rounded-lg border-black pb-4 mb-2 bg-blue-600">
+            <div class="step-row w-auto h-8 flex justify-between text-center box-shadow-[0 -1px 5px -1px #000] relative">
+                <div id="progress" class="p-6"></div>
+                <div class="step-col col-1 items-center"><small class="text-white">Step1</small></div>
+                <div class="step-col col-2"><small class="text-white">Step2</small></div>
+                <div class="step-col col-3"><small class="text-white">Step3</small></div>
+                <div class="step-col col-4"><small class="text-white">Step4</small></div>
+                <div class="step-col col-5"><small class="text-white">Step5</small></div>
+                <div class="step-col col-6"><small class="text-white">Step6</small></div>
+                <div class="step-col col-6"><small class="text-white">Step7</small></div>
+            </div>
+        </div>
+    </div>
+    <!-- progress bar end -->
+    <div class="maincontainer">
+     <div class="">
+        <h2 class="text-4xl text-center mt-4">Final Test</h2>
+        
+        <!-- question1 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>Choose any three of these:</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q2a" value="a"><label class="text-xl font-medium" for="optionA">Are you interested in fashion, design, or the beauty industry?</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q2b" value="b"><label class="text-xl font-medium" for="optionB">Are you passionate about sports, and have you considered a career in athletics or sports management?</label>
+                </div> 
+                <div class="option2 block mb-2" >
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q2c" value="c"><label class="text-xl font-medium" for="optionC">Are you intrigued by the world of business and entrepreneurship?</label>
+                </div>
+                <div class="option2 block mb-2" >
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionD" name="Q2d" value="d"><label class="text-xl font-medium" for="optionD">Do you see yourself working in a traditional job, such as in an office or a specific industry?</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionE" name="Q2e" value="e"><label class="text-xl font-medium" for="optionE">Are you drawn to the creative arts, like painting, music, writing, acting or performing in front of an audience?</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionF" name="Q2f" value="f"><label class="text-xl font-medium" for="optionF">Are you interested in pursuing a career in healthcare and helping people through medicine or nursing?</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionG" name="Q2g" value="g"><label class="text-xl font-medium" for="optionG">Have you thought about a career in technology, where you can work on innovations and software development?</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionH" name="Q2h" value="h"><label class="text-xl font-medium" for="optionH">Do you have an interest in teaching and education as a potential profession?</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionI" name="Q2i" value="i"><label class="text-xl font-medium" for="optionI">Are you interested in becoming a chef or working in the culinary industry?</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionJ" name="Q2j" value="j"><label class="text-xl font-medium" for="optionJ">Have you considered pursuing a career in law, where you can advocate for justice? </label>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Next button -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] text-end rounded-lg border-black p-3  md:p-5 mb-2">
+                 <button class="bg-blue-900 w-auto h-10 rounded hover:bg-green-500"><a class="text-xl text-white p-8 py-10 font-medium text-center" href="/conclusion/index.html">Submit</a></button>
+            </div>
+        </div> 
+    </div> 
+ </div>
+</body>
+</html>
